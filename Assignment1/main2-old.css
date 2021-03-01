@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
+    box-sizing: border-box;
 }
 
 .clearfix::after {
@@ -139,7 +140,7 @@ body {
 }
 
 #gallery__thumbs .thumb__wrapper #thumb--chocolatechip {
-    background: url(chocochip.jpg) center;
+    background: url(chocchip.jpg) center;
 }
 
 .btn1 {
@@ -151,8 +152,8 @@ body {
     border-radius: 30px;
 }
 
-#gallery__thumbs .thumb__wrapper #thumb--oatmealraisin {
-    background: url(oatmealraisin.jpg) center;
+#gallery__thumbs .thumb__wrapper #thumb--chocolatechip {
+    background: url(chocochip.jpg) center;
 }
 
 .btn2 {
@@ -164,8 +165,8 @@ body {
     border-radius: 30px;
 }
 
-#gallery__thumbs .thumb__wrapper #thumb--sugar {
-    background: url(sugar.jpg) center;
+#gallery__thumbs .thumb__wrapper #thumb--doublechocolatechip {
+    background: url(doublechocchip.jpeg) center;
 }
 
 .btn3 {
@@ -177,8 +178,8 @@ body {
     border-radius: 30px;
 }
 
-#gallery__thumbs .thumb__wrapper #thumb--dblchocochip {
-    background: url(doublechocochip.jpeg) center;
+#gallery__thumbs .thumb__wrapper #thumb--redvelvet {
+    background: url(redvelvet.jpg) center;
 }
 
 .btn4 {
@@ -190,8 +191,8 @@ body {
     border-radius: 30px;
 }
 
-#gallery__thumbs .thumb__wrapper #thumb--redvelvet {
-    background: url(redvelvet.jpg) center;
+#gallery__thumbs .thumb__wrapper #thumb--sugar {
+    background: url(sugar.jpg) center;
 }
 
 .btn5 {

@@ -10,128 +10,83 @@
 </head>
 
 <body>
-    <!-- Title for the page -->
-    <h2 class="title"> Available Cookies</h2>
-
-    <!-- Filter -->
-    <button id="filter--show-all" class="gallery__filter tag--active"> All Cookies</button>
-    <button id="filter--twodollars" class="gallery__filter "> Cookies for $2</button>
-    <button id="filter--threedollars" class="gallery__filter"> Cookies for $3</button>
-    <button id="filter--everyday" class="gallery__filter"> Everyday</button>
-    <button id="filter--weekend" class="gallery__filter"> Weekend's Only</button>
+    <div id="gallery__filters">
+        <button id="filter--show-all" class="gallery__filter tag--active"> All Cookies</button>
+        <button id="filter--twodollars" class="gallery__filter"> Cookies for $2</button>
+        <button id="filter--threedollars" class="gallery__filter"> Cookies for $3</button>
+        <button id="filter--everyday" class="gallery__filter"> Everyday</button>
+        <button id="filter--weekendsonly" class="gallery__filter"> Weekend's Only</button>
+        <p id="gallery__filters__message">Sorry, these filters won&rsquo;t work without JavaScript enabled. Please enable JavaScript, or simply click through the Case Studies below.</p>
     </div>
 
-    <!-- List of Products for Sale -->
     <div id="gallery__thumbs" class="gallery__row clearfix">
 
         <div class="gallery__column gallery__thumb filter--show tag--twodollars tag--everyday">
-            <div class="thumb_wrapper">
-                <a href="chocchip.jpg">
-                    <img src="chocchip.jpg" width="150px">
+            <div class="thumb__wrapper">
+                <a href="chocochip.jpg">
                     <div id="thumb--chocolatechip"><span class="thumb__caption">
-                    <h4>Chocolate Chip</h4>
+                    <h4>Chocolate Chip Cookie</h4>
                     <p>$2.00</p>
                     <a class="btn1">Buy</a>
                 </span></div>
                 </a>
             </div>
-
         </div>
 
         <div class="gallery__column gallery__thumb filter--show tag--twodollars tag--everyday">
-            <div class="thumb_wrapper">
-                <a href="oatmealraisin.jpg"> <img src="oatmealraisin.jpg" width="150px">
-                    <div id="thumb--oatmtealraisin"><span class="thumb__caption">
-                    <h4>Oatmeal Raisin</h4>
-                    <p>$2.00</p>
-                    <a class="btn2">Buy</a>
-                </span
-                ></div>
-                </a>
-            </div>
-        </div>
-
-        <div class="gallery__column gallery__thumb filter--show tag--threedollars tag--weekendsonly">
-            <div class="thumb_wrapper">
-                <a href="doublechocchip.jpeg">
-                    <img src="doublechocchip.jpeg" width="150px">
-                    <div id="thumb--dblchocolatechip"><span class="thumb__caption">
-                     <h4>Double Chocolate Chip</h4>
-                    <p>$3.00</p>
-                    <a class="btn3">Buy</a>
-                    </span>
-                    </div>
-                </a>
-            </div>
-        </div>
-
-        <div class="gallery__column gallery__thumb filter--show tag--threedollars tag--weekendsonly">
-            <div class="thumb_wrapper">
-                <a href="redvelvet.jpg">
-                    <img src="redvelvet.jpg" width="150px">
-                    <div id="thumb--redvelvet"><span class="thumb__caption">
-                    <h4>Red Velvet</h4>
-                    <p>$3.00</p>
-                    <a class="btn4">Buy</a>
-                </span>
-                    </div>
+            <div class="thumb__wrapper">
+                <a href="oatmealraisin.jpg">
+                    <div id="thumb--oatmealraisin"><span class="thumb__caption">
+                        <h4>Oatmeal Raisin Cookie</h4>
+                        <p>$2.00</p>
+                        <a class="btn2">Buy</a>
+                    </span></div>
                 </a>
             </div>
         </div>
 
         <div class="gallery__column gallery__thumb filter--show tag--twodollars tag--everyday">
-            <div class="thumb_wrapper">
+            <div class="thumb__wrapper">
                 <a href="sugar.jpg">
-                    <img src="sugar.jpg" width="150px">
                     <div id="thumb--sugar"><span class="thumb__caption">
-                    <h4>Sugar</h4>
-                    <p>$2.00</p>
-                    <a class="btn5">Buy</a>
-                </span>
-                    </div>
+                        <h4>Sugar Cookie</h4>
+                        <p>$2.00</p>
+                        <a class="btn3">Buy</a>
+                    </span></div>
                 </a>
             </div>
+        </div>
+
+        <div class="gallery__column gallery__thumb filter--show tag--threedollars tag--weekendsonly">
+            <div class="thumb__wrapper">
+                <a href="doublechocochip.jpeg">
+                    <div id="thumb--dblchocochip"><span class="thumb__caption">
+                        <h4>Double Chocolate Chip Cookie</h4>
+                        <p>$3.00</p>
+                        <a class="btn4">Buy</a>
+                    </span></div>
+                </a>
+            </div>
+        </div>
+
+        <div class="gallery__column gallery__thumb filter--show tag--threedollars tag--weekendsonly">
+            <div class="thumb__wrapper">
+                <a href="redvelvet.jpg">
+                    <div id="thumb--redvelvet"><span class="thumb__caption">
+                    <h4>Red Velvet Cookie</h4>
+                    <p>$3.00</p>
+                    <a class="btn5">Buy</a>
+                </span></div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <div class="gallery__column gallery__thumb filter--show tag--identity">
+        <div class="thumb__wrapper">
+
         </div>
     </div>
-    <!--
-    <div class="container" id="page-wrapper">
-
-        <div class="filter-wrapper">
-
-            <div class="form-group" style="margin-right: 200px;">
-                <label for="orderBy">Order By</label>
-                <select id="orderBy" name="orderBy">
-                    <option value="name">Name</option>
-                    <option value="price">Price</option>
-                    <option value="published">Published</option>
-                    <option value="_id">Article ID</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label for="published">Show Unpublished?</label>
-                <select id="published" name="published">
-                    <option value="true">True</option>
-                    <option value="false">False</option>
-                </select>
-            </div>
-
-        </div>
-
-        <table id="results-table" border="1">
-            <thead>
-                <tr>
-                    <th>&nbsp;</th>
-                    <th>Name</th>
-                    <th>Price</th>
-                    <th>Availability</th>
-                    <th>Published</th>
-                </tr>
-            </thead>
-
-            <!-- Results will be added through JavaScript 
-            <tbody></tbody>
-        </table>-->
 
     </div>
     <script type="text/javascript" src="productList2.js"></script>
